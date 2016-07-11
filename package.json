@@ -1,7 +1,0 @@
-{
-  "name": "reel-2reel",
-  "version": "0.1.1",
-  "scripts": {
-    "deploy": "git subtree push --prefix dist origin gh-pages"
-  }
-}
