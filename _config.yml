@@ -22,3 +22,6 @@ mark_twitter: https://twitter.com/MarkySports
 markdown: kramdown
 
 permalink: :year/:month/:day/:title/
+
+gems:
+  - jekyll-sitemap
