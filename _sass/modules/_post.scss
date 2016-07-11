@@ -1,0 +1,72 @@
+.post {
+  display: flex;
+  &-list {
+    li {
+      margin-bottom: 2rem;
+      &:not(:last-of-type) {
+        border-bottom: 1px solid $secondary-color;
+        padding-bottom: 2rem;
+      }
+      h2 {
+        a {
+          color: $secondary-color;
+          text-transform: none;
+        }
+      }
+      strong {
+        color: #aaaaaa;
+      }
+    }
+    h2 + p {
+      margin-top: 1.15em;
+    }
+  }
+  &-details {
+    margin-right: 2rem;
+    text-align: center;
+    color: #aaaaaa;
+    text-transform: uppercase;
+    font-weight: bold;
+    .link--icon {
+      color: #55acee;
+    }
+    @include respond-to(small) {
+      text-align: left;
+      display: flex;
+      align-items: center;
+      margin-bottom: 1rem;
+    }
+  }
+  &-content {
+    font-size: 1.2rem;
+    line-height: 1.7;
+    p {
+      max-width: 100%;
+      margin: 0;
+      + p {
+        margin-top: 1.5rem;
+      }
+    }
+    a {
+      @extend %dotted-border;
+      @extend %no-text-decoration;
+      color: darken($primary-color, 10%);
+      &:hover,
+      &:focus {
+        @extend %solid-border;
+      }
+    }
+    @include respond-to(small) {
+      font-size: 1rem;
+    }
+  }
+  &-share {
+    margin-top: 1.5rem;
+    a {
+      border-bottom: 0;
+    }
+  }
+  @include respond-to(small) {
+    flex-direction: column;
+  }
+}

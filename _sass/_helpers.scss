@@ -1,0 +1,100 @@
+.horizontal-center { @extend %horizontal-center; }
+%horizontal-center {
+  margin: 0 auto;
+}
+
+.vertical-center { @extend %vertical-center; }
+%vertical-center {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.pull-r { @extend %pull-r; }
+%pull-r {
+  float: right;
+}
+
+.pull-l { @extend %pull-l; }
+%pull-l {
+  float: left;
+}
+
+// Clearfix
+.cf:before,
+.cf:after {
+    content: " ";
+    display: table;
+}
+.cf:after {
+    clear: both;
+}
+.cf {
+    *zoom: 1;
+}
+
+.sr-only {
+  clip: rect(1px, 1px, 1px, 1px);
+  height: 1px;
+  margin: 0;
+  overflow: hidden;
+  position: absolute;
+  width: 1px;
+}
+
+%bg-primary {
+  background-color: $primary-color;
+}
+
+%bg-secondary {
+  background-color: $secondary-color;
+}
+
+%text-white {
+  color: #ffffff;
+}
+
+%dotted-border {
+  border-bottom: 0.15em dotted $primary-color;
+  margin-bottom: 0.15em;
+}
+
+%solid-border {
+  border-bottom: 0.15em solid;
+}
+
+%font-awesome {
+  font-family: 'FontAwesome';
+}
+
+%no-text-decoration {
+  text-decoration: none;
+}
+
+%uppercase {
+  text-transform: uppercase;
+}
+
+%hide {
+  display: none;
+}
+
+%block {
+  display: block;
+}
+
+%transition {
+  transition: all .5s ease;
+}
+
+$site-width: 75em;
+
+%max-width {
+  max-width: $site-width; 
+}
+
+.hide-on-mobile {
+  @include respond-to(small) {
+    display: none;
+  }
+}

@@ -1,0 +1,24 @@
+.logo {
+  &--container {
+    width: 50vh;
+  }
+  &--text {
+    @extend %no-text-decoration;
+    font-family: 'Economica', sans-serif;
+    font-size: 1.5rem;
+  }
+  &--image {
+    @include paddingBottom(1820, 1644, 100);
+    display: block;
+    width: 100%;
+    text-indent: -9999px;
+    background: {
+      image: url('../img/reel2reel-2x.png');
+      repeat: no-repeat;
+      size: 100%;
+    }
+    @include respond-to(small) {
+      background-image: url('../img/reel2reel.png');
+    }
+  }
+}

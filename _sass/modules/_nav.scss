@@ -1,0 +1,20 @@
+nav {
+  @extend %max-width;
+  display: flex;
+  width: 100%;
+  padding: 0 1rem;
+  margin: 0 auto;
+  justify-content: space-between;
+  > * {
+    align-items: center;
+  }
+  ul {
+    display: flex;
+  }
+  li {
+    font-weight: 700;
+    &:not(:last-of-type) {
+      margin-right: 1rem;
+    }
+  }
+}

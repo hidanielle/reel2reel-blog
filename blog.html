@@ -1,0 +1,36 @@
+---
+layout: blog
+title: Blog
+permalink: /blog/
+---
+<section class="intro intro-short blog">
+  <div class="content">
+    <h1>{{ page.title }}</h1>
+  </div>
+</section>
+
+{% include latest-ep.html %}
+
+<section>
+
+  <div class="content">
+
+    <ul class="post-list post-content">
+      {% for post in site.posts %}
+        <li>
+          <strong class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</strong> / 
+          {% if post.author %}<strong>Posted by: {{ post.author }}</strong>{% endif %}
+          <h2>
+            <a class="post-link link--text" href="{{ post.url | prepend: site.baseurl }}">{{ post.title | truncatewords:10 }}</a>
+          </h2>
+          <p>{{ post.content | strip_html | truncatewords:75}}<br>
+            <a href="{{ post.url }}">Read More</a></p>
+        </li>
+      {% endfor %}
+    </ul>
+
+  </div>
+
+</section>
+
+

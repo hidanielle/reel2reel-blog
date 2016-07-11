@@ -1,0 +1,20 @@
+header {
+  @extend %bg-secondary;
+  @extend %uppercase;
+  @extend %text-white;
+  position: fixed;
+  display: flex;
+  top: 0;
+  height: 2.9rem;
+  width: 100%;
+  z-index: 9999;
+  align-items: center;
+  a {
+    @extend %text-white;
+  }
+  @include respond-to(small) {
+    .social {
+      display: none;
+    }
+  }
+}

@@ -1,0 +1,8 @@
+footer {
+  @extend %text-white;
+  @extend %bg-secondary;
+  nav {
+    justify-content: center;
+    margin: 1rem auto;
+  }
+}

@@ -1,0 +1,15 @@
+section {
+  padding: 2rem 1rem;
+}
+.section {
+  &--dark {
+    @extend %bg-secondary;
+    @extend %text-white;
+  }
+  &--light {
+    @extend %bg-primary;
+  }
+  &--center {
+    text-align: center;
+  }
+}

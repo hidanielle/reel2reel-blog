@@ -1,0 +1,92 @@
+.link {
+  &--text {
+    @extend %dotted-border;
+    @extend %no-text-decoration;
+    display: inline;
+    color: $primary-color;
+    &:hover,
+    &:focus {
+      @extend %solid-border;
+    }
+    .section--light & {
+      color: black;
+      border-bottom-color: white;
+    }
+  }
+  &--internal {
+    text-decoration: none;
+    line-height: 1rem;
+    &:after {
+      @extend %transition;
+      content: '\203A';
+      font-size: 1.5em;
+      margin-left: .5rem;
+    }
+    &:hover,
+    &:active,
+    &:focus {
+      color: $primary-color;
+      &:after {
+        margin-left: 1rem;
+      }
+    }
+  }
+  &--companion {
+    &:before {
+      content: '/';
+      margin: auto 1rem;
+    }
+  }
+  &--external {
+    &:after {
+      @extend %font-awesome;
+      content: '\f08e';
+      margin-left: 0.5rem;
+      font-size: 0.8em;
+    }
+  }
+  // TODO: Check if this is all necessary
+  &--additional {
+    @extend %no-text-decoration;
+    @extend %text-white;
+    font-size: 0.7rem;
+    margin-left: 1rem;
+    &:before {
+      @extend %text-white;
+      content: '/';
+      margin-right: 0.5rem;
+    }
+    @include respond-to(small) {
+      display: block;
+      margin-left: 0;
+      margin-top: .5rem;
+      &:before {
+        display: none;
+      }
+    }
+  }
+  &--icon {
+    @extend %text-white;
+    font-size: 1.5rem;
+    border-bottom: 0;
+    a {
+
+      i {
+        @extend %transition;
+        transform: scale(1);
+        backface-visibility: hidden;
+        transform: translate3d(0,0,0);
+        &:before {
+          @extend %text-white;
+        }
+      }
+      &:hover,
+      &:focus {
+        i {
+          backface-visibility: hidden;
+          transform: translate3d(0,0,0) translateZ(0) scale(1.2);
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,30 @@
+* {
+  box-sizing: border-box;
+}
+
+body,
+html {
+  height: 100%;
+}
+
+body {
+  padding-top: 2.9rem;
+  width: 100%; 
+  display: flex;
+  flex-direction: column;
+  color: $secondary-color;
+  min-height: 100vh;
+  line-height: 1.2rem;
+  background-color: #ffffff;
+  text-rendering: optimizelegibility;
+  text-size-adjust: none;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+@include respond-to(small) {
+  .blog .latest {
+    display: none;
+  }
+}

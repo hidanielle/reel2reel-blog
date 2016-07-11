@@ -1,0 +1,12 @@
+.container {
+  flex: 1;
+  position: relative;
+}
+.content {
+  @extend %max-width;
+  width: 80%;
+  margin: 0 auto;
+  @include respond-to(small) {
+    width: 100%;
+  }
+}

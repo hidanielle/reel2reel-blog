@@ -1,0 +1,37 @@
+.intro {
+  @extend %bg-primary;
+  display: flex;
+  height: 60vh;
+  align-items: center;
+  justify-content: center;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  h1 {
+    padding: calculateRem(50px);
+  }
+  &-short {
+    height: auto;
+    min-height: 30vh;
+    justify-content: flex-start;
+    h1 {
+      padding: 0;
+    }
+    .content {
+      margin: auto;
+    }
+  }
+  &.blog {
+    background-image: url("../img/blog-bg.png");
+  }
+  // &.post {
+  //   // background-image: url("../img/test-bg.jpg");
+  //   // -moz-filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale");
+  //   //  -o-filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale");
+  //   //  -webkit-filter: grayscale(100%);
+  //   //  filter: gray;
+  //   //  filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale");
+  //   background: linear-gradient(to bottom, rgba(184, 223, 252, 0.86) 45%, #b8dffc 100%), url("../img/test-bg.jpg");
+  // }
+}
+

@@ -1,0 +1,36 @@
+---
+layout: default
+---
+<section class="intro">
+  <h1 class="logo--container"><span class="logo--image" data-scroll="data-scroll">Reel 2 Reel Podcast</span></h1>
+</section>
+
+{% include latest-ep.html %}
+
+<section>
+  <div class="content">
+    <div class="person mike" data-scroll="data-scroll">
+      <h2>I'm Mike <a href="{{ site.mike_twitter }}" target="_blank" title="Follow Mike on Twitter"><i class="fa fa-twitter"></i></a></h2>
+    </div>
+    <div class="person mark" data-scroll="data-scroll">
+      <h2><a href="{{ site.mark_twitter }}" target="_blank" title="Follow Mark on Twitter"><i class="fa fa-twitter"></i></a> I'm Mark</h2>
+    </div>
+    <p class="large">Listen to us <strong>build up</strong> and <strong>rip apart actors</strong> every week, and bring you all the latest movie <em>news</em>, <em>gossip</em>, and <em>reviews</em>.</p>
+    <div class="twitter-widget" data-scroll="data-scroll"><a class="twitter-timeline" href="https://twitter.com/{{ sites.twitter_username }}" data-widget-id="726129236516298753">Tweets by @{{ sites.twitter_username }}</a>
+      <script>
+        !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+        
+        
+      </script>
+    </div>
+  </div>
+</section>
+
+<section class="section--light">
+  <section class="content">
+    <h2>More Episodes</h2>
+    <ul class="ep-list"></ul>
+    <h3>For a full list of episodes, head over to <a class="link--external link--text" href="https://soundcloud.com/reel2reelpodcast" target="_blank">Soundcloud</a> or <a class="link--external link--text" href="https://itunes.apple.com/ca/podcast/reel-2-reel-podcast/id1001209243?mt=2" target="_blank">iTunes</a></p><br/>
+    <h3>Send us an email at <a class="link--text" href="mailto:reel2reelpodcast@gmail.com" target="_blank"><i class="fa fa-envelope-o"></i> {{ site.email }} </a> </p>
+  </section>
+</div>

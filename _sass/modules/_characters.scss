@@ -1,0 +1,148 @@
+$head-size: 300px;
+
+.person {
+  position: relative;
+  height: $head-size;
+  margin-top: 2rem;
+  &:before {
+    content: '';
+    position: absolute;
+    display: block;
+    width: $head-size;
+    height: $head-size;
+  }
+  h2 {
+    @extend %vertical-center;
+    @extend %bg-primary;
+    display: inline;
+    color: $secondary-color;
+    text-transform: none;
+    font-size: 5em;
+    padding: 2rem 4rem;
+    border-radius: 5rem;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    &:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+    }
+    a {
+      @extend %transition;
+      color: #55acee;
+      &:hover,
+      &:focus {
+        @extend %text-white;
+      }
+    }
+    @include respond-to(medium) {
+      font-size: 3rem;
+    }
+  }
+  &.small {
+    height: $head-size / 2;
+    margin-top: 0;
+    margin-bottom: 0;
+    &:before {
+      width: $head-size / 2;
+      height: $head-size / 2;
+    }
+  }
+  @include respond-to(small) {
+    $head-size: 100px;
+    height: $head-size;
+    margin-bottom: 20px;
+    &:before {
+      width: $head-size;
+      height: $head-size;
+    }
+    h2 {
+      font-size: 2em;
+      text-align: center;
+      padding: 1rem;
+    }
+    &.small {
+      $head-size: 50px;
+      height: $head-size;
+      margin-bottom: 0;
+      &:before {
+        width: $head-size;
+        height: $head-size;
+      }
+    }
+  }
+}
+
+.mike {
+  padding-left: $head-size;
+  &:before {
+    left: 0;
+    background: {
+      image: url("../img/Mike.png");
+      repeat: no-repeat;
+      size: 100%;
+    }
+  }
+  h2:before {
+    @include triangle(right, $primary-color, 15px, 15px, 25px);
+    left: -15px;
+  }
+  &.small {
+    padding-left: $head-size / 2;
+  }
+  @include respond-to(small) {
+    $head-size: 100px;
+    padding-left: $head-size;
+    &.small {
+      $head-size: 50px;
+      padding-left: $head-size;
+    }
+  }
+}
+
+.mark {
+  text-align: right;
+  padding-right: $head-size;
+  margin-bottom: 160px;
+  &:before {
+    right: 0;
+    background: {
+      image: url("../img/Mark.png");
+      repeat: no-repeat;
+      size: 100%;
+    }
+  }
+  &.small {
+    padding-left: $head-size / 2;
+    padding-right: 0;
+    margin-bottom: auto;
+  }
+  h2:before {
+    @include triangle(left, $primary-color, 15px, 15px, 25px);
+    right: -15px;
+  }
+  @include respond-to(small) {
+    $head-size: 100px;
+    margin-bottom: 50px;
+    padding-right: $head-size;
+    &.small {
+      $head-size: 50px;
+      padding-right: 0;
+      padding-left: $head-size;
+      margin-bottom: 0;
+      &:before {
+        right: auto;
+        left: 0;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 320px) { 
+  .person h2 {
+    padding: 10px;
+    font-size: 1.7em;
+  }
+}
