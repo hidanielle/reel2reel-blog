@@ -9,8 +9,7 @@
 name: Reel 2 Reel Podcast
 title: Reel 2 Reel Podcast | News and gossip about your favorite celebrities and box office hits
 email: reel2reelpodcast@gmail.com
-description: > # this means to ignore newlines until "baseurl:"
-  Listen to Mike & Mark build up and rip apart actors every week, and bring you all the latest movie news, gossip, and reviews.
+description: Listen to Mike & Mark build up and rip apart actors every week, and bring you all the latest movie news, gossip, and reviews.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://reel2reel.org" # the base hostname & protocol for your site
 twitter_username: reel2reelpod
