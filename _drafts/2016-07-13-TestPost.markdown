@@ -1,0 +1,39 @@
+---
+layout: post
+title:  "This is a test Post"
+date:   2016-07-12
+author: mark
+---
+
+## This is the sub title of the test post - if you want one
+
+ 
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut non **something bold**. Aliquam rhoncus dui nec est elementum mollis in id ante. Cum sociis natoque penatibus et magnis dis *something emphasized*, nascetur ridiculus mus. Sed scelerisque, purus [non gravida facilisis](http://google.com), neque ex fringilla ipsum, non gravida sapien augue dapibus mi. Nam ut enim mollis, interdum tellus ac, congue lectus. Quisque non egestas massa. Donec facilisis purus id molestie mollis. Nam eget lorem auctor, pharetra quam eget, dictum lorem.
+
+ 
+
+### Another title to seperate a section
+
+
+![Alt](http://placekitten.com/1920/1080)
+*This is an image caption, make sure you put it directly under the image to be styled like an image caption*
+ 
+
+Proin tempus lacus vitae sagittis mollis. Nunc consectetur rhoncus neque in viverra. Mauris maximus odio eu porttitor rhoncus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aliquam a fermentum justo, et aliquam eros. Phasellus metus orci, cursus in dictum nec, sollicitudin ut massa. Sed in elit tortor. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+
+* Phasellus vitae 
+* Justo non felis 
+* Ornare tempor feugiat
+* Nulla vitae leo magna 
+* Mauris molestie
+
+Pellentesque eros sapien, cursus a molestie quis, malesuada sed dui. Morbi non ante sit amet elit porta iaculis. Fusce congue ipsum nec suscipit vestibulum. Proin eget velit eu diam pellentesque aliquam. Sed feugiat aliquet diam sit amet blandit. Sed finibus ac erat quis mollis.
+
+
+
+> Fusce sed tellus maximus, eleifend lectus ac, imperdiet turpis
+
+ 
+
+Nulla pulvinar nisl vitae magna ultricies vulputate. Etiam semper orci ipsum, convallis viverra ex congue ut.
