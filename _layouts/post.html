@@ -42,7 +42,7 @@ layout: blog
 
         <div class="post-share">
           <strong>Share this Post</strong>
-          <a class="link--icon" href="https://twitter.com/intent/tweet?url={{ page.url | prepend: site.url | url_encode }}" target="_blank" title="Share this post on Twitter"><i class="fa fa-twitter"></i></a>
+          <a class="link--icon" href="https://twitter.com/intent/tweet?{% if page.share %}text={{ page.share | url_encode }}&{% endif%}url={{ page.url | prepend: site.url | url_encode }}" target="_blank" title="Share this post on Twitter"><i class="fa fa-twitter"></i></a>
           <a class="link--icon" href="http://www.facebook.com/sharer/sharer.php?u={{ page.url | prepend: site.url | url_encode }}" target="_blank" title="Share this post on Facebook"><i class="fa fa-facebook"></i></a>
         </div>
       </div>
