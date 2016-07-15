@@ -15,7 +15,7 @@ p: rezidence1
 
 ## NEW BLOG POST
 
-View example blog post [here](https://github.com/hidanielle/reel2reel-blog/blob/master/_drafts/2016-07-13-TestPost.markdown)
+View example blog post [here](https://github.com/hidanielle/reel2reel-blog/blob/gh-pages/_drafts/2016-07-13-TestPost.markdown)
 
 Navigate to https://github.com/hidanielle/reel2reel-blog/tree/gh-pages/_posts
 
