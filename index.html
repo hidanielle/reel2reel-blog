@@ -16,6 +16,31 @@ layout: default
       <h2><a href="{{ site.mark_twitter }}" target="_blank" title="Follow Mark on Twitter"><i class="fa fa-twitter"></i></a> I'm Mark</h2>
     </div>
     <p class="large">Listen to us <strong>build up</strong> and <strong>rip apart actors</strong> every week, and bring you all the latest movie <em>news</em>, <em>gossip</em>, and <em>reviews</em>.</p>
+  </div>
+</section>
+
+<section class="section--grey section--center section--padding section--blog">
+  <div class="content intro-short">
+    <h2>FROM THE BLOG</h2>
+
+    <ul class="post-list post-list-short post-content">
+      {% for post in site.posts %}
+        <li>
+          <h3>
+            <a class="post-link link--text" href="{{ post.url | prepend: site.baseurl }}">{{ post.title | truncatewords:10 }}</a>
+          </h3>
+          <p>{{ post.content | strip_html | truncatewords:25}}<br>
+            <a href="{{ post.url }}">Read More</a></p>
+        </li>
+      {% endfor %}
+    </ul>
+
+    <a href="/blog" class="link--text"><strong>View all posts</strong></a>
+  </div>
+</section>
+
+<section>
+  <div class="content">
     <div class="twitter-widget" data-scroll="data-scroll"><a class="twitter-timeline" href="https://twitter.com/{{ sites.twitter_username }}" data-widget-id="726129236516298753">Tweets by @{{ sites.twitter_username }}</a>
       <script>
         !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");

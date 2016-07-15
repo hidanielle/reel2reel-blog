@@ -8,9 +8,12 @@
     &:focus {
       @extend %solid-border;
     }
-    .section--light & {
+    .section--light &  {
       color: black;
       border-bottom-color: white;
+    }
+    .section--grey & {
+      color: $secondary-color;
     }
   }
   &--internal {
