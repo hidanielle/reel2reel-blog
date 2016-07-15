@@ -27,4 +27,13 @@ body {
   .blog .latest {
     display: none;
   }
+  .latest strong {
+    display: block;
+  }
 }
+
+.latest {
+    .content {
+      max-width: 55em;
+    }
+  }
