@@ -24,7 +24,7 @@ layout: default
     <h2>FROM THE BLOG</h2>
 
     <ul class="post-list post-list-short post-content">
-      {% for post in site.posts %}
+      {% for post in site.posts limit:3 %}
         <li>
           <h3>
             <a class="post-link link--text" href="{{ post.url | prepend: site.baseurl }}">{{ post.title | truncatewords:10 }}</a>
