@@ -1,19 +1,19 @@
 <head>
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
-  <meta property="description" content="{{ site.description }}"/>
-  <meta property="og:title" content="{{ site.title | escape }}"/>
-  <meta property="og:description" content="{{ site.description }}"/>
+  <meta property="description" content="{{ page.content | strip_html | strip_newlines | truncate: 160 }}"/>
+  <meta property="og:title" content="{{ page.title }} | {{ site.name | escape }}"/>
+  <meta property="og:description" content="{{ page.content | strip_html | strip_newlines | truncate: 160 }}"/>
   <meta property="og:image" content="{{ "/img/og-image.png" | prepend: site.baseurl | prepend: site.url }}"/>
   <meta name="twitter:url" content="{{ site.url }}"/>
   <meta name="twitter:site" content="@{{ site.twitter_username }}"/>
   <meta name="twitter:creator" content="@{{ site.twitter_username }}"/>
   <meta name="twitter:image:src" content="{{ "/img/og-image.png" | prepend: site.baseurl | prepend: site.url }}"/>
   <meta name="twitter:card" content="summary"/>
-  <meta name="twitter:title" content="{{ site.title | escape }}"/>
-  <meta name="twitter:description" content="{{ site.description }}"/>
+  <meta name="twitter:title" content="{{ page.title }} | {{ site.name | escape }}"/>
+  <meta name="twitter:description" content="{{ page.content | strip_html | strip_newlines | truncate: 160 }}"/>
 
-  <title>{{ site.title | escape }}</title>
+  <title>{{ page.title }} | {{ site.name | escape }}</title>
 
   <link href="https://fonts.googleapis.com/css?family=Economica:400,700|Roboto+Condensed:400,700" rel="stylesheet" type="text/css"/>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css"/>
