@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "The Bottom 4 Movies Of All Time"
+title:  "The Bottom 5 Movies Of All Time"
 date:   2016-08-04
 author: mike
 ---
