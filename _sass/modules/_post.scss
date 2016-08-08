@@ -63,6 +63,10 @@
     font-size: 1.2rem;
     line-height: 1.7;
     max-width: 42em;
+    margin: 0 auto;
+    .post & {
+      margin: 0;
+    }
     h2,
     h3,
     h4,
