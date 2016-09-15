@@ -1,0 +1,51 @@
+---
+layout: default
+title: Rose 2 Rose
+permalink: /rose2rose/
+---
+<span class="rose">
+
+<section class="intro no-bg">
+  <h1 class="logo--container logo__rose"><span class="logo--image" data-scroll="data-scroll">Rose 2 Rose: Brought to you by the Reel 2 Reel Podcast</span></h1>
+</section>
+
+{% include latest-ep.html %}
+
+<section class="section--center section--grey">
+  <div class="content">
+    <br><br><br><br><br><br>
+    <p class="large">{{ site.rose_about }}</p>
+    <br><br><br><br><br><br>
+  </div>
+</section>
+
+<!-- <section class="section--grey section--center section--padding section--blog">
+  <div class="content intro-short">
+    <h2>FROM THE BLOG</h2>
+
+    <ul class="post-list post-list-short post-content">
+      {% for post in site.posts limit:3 %}
+        <li>
+          <h3>
+            <a class="post-link link--text" href="{{ post.url | prepend: site.baseurl }}">{{ post.title | truncatewords:10 }}</a>
+          </h3>
+          <p>{{ post.content | strip_html | truncatewords:25}}<br>
+            <a href="{{ post.url }}">Read More</a></p>
+        </li>
+      {% endfor %}
+    </ul>
+
+    <a href="/blog" class="link--text"><strong>View all posts</strong></a>
+  </div>
+</section>
+ -->
+<section class="section--red">
+  <section class="content">
+    <h2>Most Recent Episodes of Rose 2 Rose</h2>
+    <ul class="ep-list rose-ep-list"></ul>
+    <h3>For a full list of episodes, head over to <a class="link--external link--text" href="https://soundcloud.com/reel2reelpodcast" target="_blank">Soundcloud</a> or <a class="link--external link--text" href="https://itunes.apple.com/ca/podcast/reel-2-reel-podcast/id1001209243?mt=2" target="_blank">iTunes</a></p><br/>
+    <h3>Send us an email at <a class="link--text" href="mailto:reel2reelpodcast@gmail.com" target="_blank"><i class="fa fa-envelope-o"></i> {{ site.email }} </a> </p>
+  </section>
+</div>
+
+</span>

@@ -8,12 +8,20 @@
     &:focus {
       @extend %solid-border;
     }
+    .rose & {
+      color: #c02026;
+      border-bottom-color: #c02026;
+    }
     .section--light &  {
       color: black;
       border-bottom-color: white;
     }
     .section--grey & {
       color: $secondary-color;
+    }
+    .section--red & {
+      color: white ;
+      border-bottom-color: #84050c;
     }
   }
   &--internal {

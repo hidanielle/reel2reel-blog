@@ -15,6 +15,8 @@ url: "http://reel2reel.org" # the base hostname & protocol for your site
 twitter_username: reel2reelpod
 social_username: reel2reelpodcast
 
+rose_about: Mike and Mark kick off the separate entity of <strong>Rose 2 Rose</strong> with talk about Bachelorette Canada! They love Jasmine and have lots of thoughts on some of the great and terrible scum people vying for her affections.
+
 mike_twitter: https://twitter.com/ohmikegraham
 mark_twitter: https://twitter.com/MarkySports
 
@@ -25,3 +27,5 @@ permalink: :year/:month/:day/:title/
 
 gems:
   - jekyll-sitemap
+
+port: 4001

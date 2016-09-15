@@ -23,4 +23,14 @@
       background-image: url('../img/reel2reel.png');
     }
   }
+  &__rose {
+    .logo {
+      &--image {
+        background-image: url('../img/rose2rose.png');
+        @include respond-to(small) {
+          background-image: url('../img/rose2rose.png');
+        }
+      }
+    }
+  }
 }

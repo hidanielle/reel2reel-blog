@@ -37,6 +37,9 @@
           border-bottom: none;
           padding-bottom: 1em;
         }
+        @include respond-to(small) {
+          max-width: 100%;
+        }
       }
       @include respond-to(small) {
         flex-direction: column;
@@ -100,6 +103,10 @@
       &:hover,
       &:focus {
         @extend %solid-border;
+      }
+      .rose & {
+        color: #2b2b2b;
+        border-bottom-color: #c02026;
       }
     }
     strong {

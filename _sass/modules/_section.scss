@@ -12,6 +12,10 @@ section {
   &--grey {
     background-color: #eeeeee;
   }
+  &--red {
+    background-color: #c02026;
+    color: white;
+  }
   &--center {
     text-align: center;
   }
@@ -20,3 +24,10 @@ section {
     padding: 6em 0;
   }
 }
+
+// .rose {
+//   .latest {
+//     background-color: #c02026;
+//     color: white;
+//   }
+// }

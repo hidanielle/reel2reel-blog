@@ -16,5 +16,8 @@ nav {
     &:not(:last-of-type) {
       margin-right: 1rem;
     }
+    @include respond-to(small) {
+      font-size: 0.8em;
+    }
   }
 }
