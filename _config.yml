@@ -11,7 +11,7 @@ title: Reel 2 Reel Podcast | A podcast about your favourite celebrities and box 
 email: reel2reelpodcast@gmail.com
 description: Listen to Mike & Mark go reel 2 reel on your favourite actors every week, and bring you all the latest movie news, gossip, and reviews. Now in podcast and article form!
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://reel2reel.org" # the base hostname & protocol for your site
+url: "http://reel2reelpod.com" # the base hostname & protocol for your site
 twitter_username: reel2reelpod
 social_username: reel2reelpodcast
 
