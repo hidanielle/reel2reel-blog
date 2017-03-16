@@ -28,4 +28,4 @@ permalink: :year/:month/:day/:title/
 gems:
   - jekyll-sitemap
 
-port: 4001
+port: 4002
